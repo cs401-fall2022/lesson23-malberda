@@ -1,0 +1,51 @@
+.flex-container{
+    display:flex;
+}
+.flex-child-left{
+    flex: 0.1;
+    border: 8px double blue;
+}  
+.flex-child-right{
+    flex: 0.88;
+    margin-left:10px;
+    border: 2px solid yellow;
+}
+.newBlogButton {
+    position: absolute;
+    left:90%;
+    top: 90%;
+    background-color: #298e46;
+    border: 1px slid black;
+    border-radius: 6px;
+    box-shadow: black;
+    box-sizing: border-box;
+    color:white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    
+}
+.newBlogButton:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.newBlogButton:hover {
+  background-color: #2c974b;
+}
+.newBlogButton:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+.newBlogButton:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
