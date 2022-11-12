@@ -38,14 +38,72 @@
   box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
   outline: none;
 }
-.button-3:disabled {
-  background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
-  cursor: default;
-}
 .newBlogButton:active {
   background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+.deleteBlogButton {
+    position: absolute;
+    left:90%;
+    top: 85%;
+    background-color: #ff0000;
+    border: 1px slid black;
+    border-radius: 6px;
+    box-shadow: black;
+    box-sizing: border-box;
+    color:white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    
+}
+.deleteBlogButton:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.deleteBlogButton:hover {
+  background-color: #972c2c;
+}
+.deleteBlogButton:focus {
+  box-shadow: rgba(174, 10, 10, 0.4) 0 0 0 3px;
+  outline: none;
+}
+.deleteBlogButton:active {
+  background-color: #9d0000;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+.editBlogButton {
+    position: absolute;
+    left:90%;
+    top: 80%;
+    background-color: #001475;
+    border: 1px slid black;
+    border-radius: 6px;
+    box-shadow: black;
+    box-sizing: border-box;
+    color:white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    
+}
+.editBlogButton:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.editBlogButton:hover {
+  background-color: #005cb3;
+}
+.editBlogButton:focus {
+  box-shadow: rgba(69, 33, 247, 0.4) 0 0 0 3px;
+  outline: none;
+}
+.editBlogButton:active {
+  background-color: #000d9d;
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
