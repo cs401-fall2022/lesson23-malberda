@@ -8,8 +8,6 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $query = "SELECT * FROM blogs;";
-    $results = $conn->query($query);
     try {
         $title = $_POST['blog_title'];
         $contents = $_POST['blog_contents'];
