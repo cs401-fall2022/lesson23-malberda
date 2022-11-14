@@ -13,7 +13,7 @@ $conn = new mysqli("h1use0ulyws4lqr1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", 
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$query = "SELECT * FROM blogs;";
+$query = "SELECT * FROM blogs ORDER BY id desc;";
 $results = $conn->query($query);
 
 
