@@ -1,6 +1,5 @@
 
 <?php
-    echo "please help";
 
     // Create connection
     $conn = new mysqli("h1use0ulyws4lqr1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "wssr4ahq7pc7kym9", "b1yaul4q9uq2pymr", "t8j4x8c83vv4nopt");
@@ -17,7 +16,9 @@
 
         $sql = "INSERT INTO blogs (blog_title, blog) VALUES ('$title','$contents');";
         if($conn->query($sql) == true) {
-            echo "new record created successfully";
+            //echo "new record created successfully";
+            header("Location: https://final-project-malberda-401.herokuapp.com/"); 
+            exit;
         }
         else {
             echo "error" . $sql."<br>" . $conn->error;
@@ -25,7 +26,6 @@
     } catch(Exception $e) {
         exit;
     }
-    echo print_r($sql);
     exit;
 
 ?>
