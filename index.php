@@ -19,12 +19,6 @@ if ($conn->connect_error) {
 }
 $query = "SELECT * FROM blogs;";
 $results = $conn->query($query);
-// print_r($results);
-// echo "<br><br>";
-// foreach($results as $result) {
-//     echo print_r($result);
-//     echo "<br><br>";
-// }
 
 
         foreach ($results as $result) {

@@ -11,18 +11,9 @@
     }
     $query = "SELECT * FROM blogs;";
     $results = $conn->query($query);
-echo "this test is working 1";
     try {
-        echo "this test is working 2";
-        echo print_r($_POST);
-        echo "this test is working 3";
         $title = $_POST['blog_title'];
-        echo "this test is working 4";
-echo $title . '<br>';
-echo "this test is working 5";
         $contents = $_POST['blog_contents'];
-        echo "this test is working 6";
-        echo $contents . '<br>';
 
         $sql = "INSERT INTO blogs (blog_title, blog) VALUES ('$title','$contents');";
         if($conn->query($sql) == true) {
@@ -32,10 +23,9 @@ echo "this test is working 5";
             echo "error" . $sql."<br>" . $conn->error;
         }
     } catch(Exception $e) {
-        echo print_r($e,1);
-        //exit;
+        exit;
     }
     echo print_r($sql);
-    //exit;
+    exit;
 
 ?>
