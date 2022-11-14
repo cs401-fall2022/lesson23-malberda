@@ -19,9 +19,10 @@ try {
         SET blog_title = $title, blog = $contents
         WHERE id=$id; 
         ";
+        echo $sql;
     if($conn->query($sql) == true) {
         //echo "new record created successfully";
-        header("Location: https://final-project-malberda-401.herokuapp.com/"); 
+        //header("Location: https://final-project-malberda-401.herokuapp.com/"); 
         exit;
     }
     else {

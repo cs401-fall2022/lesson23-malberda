@@ -14,15 +14,19 @@ if ($conn->connect_error) {
 try {
     $id = $_POST['blog_id'];
     $query = "SELECT * FROM blogs WHERE id=$id ORDER BY id desc;";
-    $result = $conn->query($query)[0];
-                
+    $results = $conn->query($query);
+    
+    echo 'printing results';
+    echo print_r($results);
+    
 } catch(Exception $e) {
-    exit;
+    //do nothing
 }
-exit;
+
 
 ?>
 <body>
+    <?php foreach ($results as $result) { ?>
     <form method="post" action="upload_handler.php">
         <div>
            <label for="blog_title">Input new Blog Title</label><br>
@@ -30,7 +34,7 @@ exit;
         </div>
         <div>
             <label for="blog_contents">Input new Blog Contents:</label><br>
-            <textarea id="blog_contents" name="blog_contents" value="<?php echo $result['blog'] ?>" rows='45' cols='250' required></textarea><br><br>
+            <textarea id="blog_contents" name="blog_contents"  rows='45' cols='250' required><?php echo $result['blog'] ?></textarea><br><br>
         </div>
         <input type="hidden" name="blog_id" value="<?php echo $id?>" />
         <div>
@@ -38,4 +42,5 @@ exit;
             <input type="submit" id='submit' name='submit'>
         </div>
     </form>
+    <?php } ?>
 </body>

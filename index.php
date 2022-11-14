@@ -3,11 +3,15 @@
     <title>Final Project CS 401</title>
     <link rel="stylesheet" href="ref/styles.css">
 </head>
-    <div id="title" class='pageTitle'>
+    <!-- <div id="title" class='pageTitle'>
         This is my Final Project for CS 401
+    </div> -->
+
+    <div class='header'>
+        <h2> Michael Alberda's Blog </h2>
     </div>
 
-
+    <body>
     <?php 
 
 // Create connection
@@ -21,6 +25,7 @@ $query = "SELECT * FROM blogs ORDER BY id desc;";
 $results = $conn->query($query);
 
 
+
         foreach ($results as $result) {
             ?>
     <div class='flex-container'>
@@ -29,23 +34,28 @@ $results = $conn->query($query);
             <?php echo $result['blog_title'];?>
         </div>
         <div class="flex-child-right">
-            <?php echo $result['blog'];?>
+            <?php echo $result['blog'].'<br>';?>
+
         </div>
     </div>
 <?
         }
     ?>
+    <a href='/editBlog.php'>
+        <button class="editBlogButton">Edit Blog Post</button>
+    </a><br>
 
-    <a href='/uploadBlog.php'>
-        <button class="newBlogButton">Upload New Blog</button>
-    </a>
     <a href='/deleteBlog.php'>
         <button class="deleteBlogButton">Delete Blog Post</button>
     </a>
-    <a href='/editBlog.php'>
-        <button class="editBlogButton">Edit Blog Post</button>
+    <a href='/uploadBlog.php'>
+        <button class="newBlogButton">Upload New Blog</button>
     </a>
-<?php 
+
+</body>
+
+
+<?php
 
 
 

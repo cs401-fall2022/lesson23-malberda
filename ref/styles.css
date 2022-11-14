@@ -75,9 +75,9 @@
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 .editBlogButton {
-    position: absolute;
+    position:absolute;
+    top:80%;
     left:90%;
-    top: 80%;
     background-color: #001475;
     border: 1px slid black;
     border-radius: 6px;
@@ -107,3 +107,19 @@
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background: #d4d4d4;
+  }
+
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: lightblue;
+  }
+  
