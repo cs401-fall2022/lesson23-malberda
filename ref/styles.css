@@ -4,16 +4,17 @@
 .flex-child-left{
     flex: 0.1;
     border: 8px double blue;
+    background-color: whitesmoke;
 }  
 .flex-child-right{
-    flex: 0.88;
+    flex: 0.8;
     margin-left:10px;
     border: 2px solid yellow;
+    background: white;
 }
 .newBlogButton {
-    position: absolute;
-    left:90%;
-    top: 90%;
+    position: relative;
+    left:10%;
     background-color: #298e46;
     border: 1px slid black;
     border-radius: 6px;
@@ -43,9 +44,8 @@
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 .deleteBlogButton {
-    position: absolute;
-    left:90%;
-    top: 85%;
+    position: relative;
+    left:75%;
     background-color: #ff0000;
     border: 1px slid black;
     border-radius: 6px;
@@ -75,9 +75,8 @@
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 .editBlogButton {
-    position:absolute;
-    top:80%;
-    left:90%;
+    position:relative;
+    left:50%;
     background-color: #001475;
     border: 1px slid black;
     border-radius: 6px;

@@ -12,6 +12,16 @@
     </div>
 
     <body>
+    <a href='/uploadBlog.php'>
+        <button class="newBlogButton">Upload New Blog</button>
+    </a>
+    <a href='/editBlog.php'>
+        <button class="editBlogButton">Edit Blog Post</button>
+    </a>
+
+    <a href='/deleteBlog.php'>
+        <button class="deleteBlogButton">Delete Blog Post</button>
+    </a>
     <?php 
 
 // Create connection
@@ -41,22 +51,6 @@ $results = $conn->query($query);
 <?
         }
     ?>
-    <a href='/editBlog.php'>
-        <button class="editBlogButton">Edit Blog Post</button>
-    </a><br>
-
-    <a href='/deleteBlog.php'>
-        <button class="deleteBlogButton">Delete Blog Post</button>
-    </a>
-    <a href='/uploadBlog.php'>
-        <button class="newBlogButton">Upload New Blog</button>
-    </a>
 
 </body>
 
-
-<?php
-
-
-
-?>
