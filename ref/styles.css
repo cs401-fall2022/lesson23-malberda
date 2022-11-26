@@ -45,7 +45,7 @@
 }
 .deleteBlogButton {
     position: relative;
-    left:75%;
+    left:60%;
     background-color: #ff0000;
     border: 1px slid black;
     border-radius: 6px;
@@ -76,7 +76,7 @@
 }
 .editBlogButton {
     position:relative;
-    left:50%;
+    left:35%;
     background-color: #001475;
     border: 1px slid black;
     border-radius: 6px;
