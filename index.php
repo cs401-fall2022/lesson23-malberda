@@ -48,9 +48,8 @@ $results = $conn->query($query);
 
         </div>
     </div>
-<?
+<?php
         }
     ?>
 
 </body>
-
