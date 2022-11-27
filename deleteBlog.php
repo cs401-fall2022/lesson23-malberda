@@ -1,5 +1,6 @@
 <head>
 
+<link rel="stylesheet" href="ref/styles.css">
 </head>
 
 <body>
@@ -19,14 +20,10 @@ $results = $conn->query($query);
 
         foreach ($results as $result) {
             ?>
-    <div class='flex-container'>
-            
-        <div class="flex-child-left">
+        <div>
             <?php echo "This is blog number ".$result['id'].':';?>
             <?php echo $result['blog_title'];?>
         </div>
-        
-    </div>
     <? 
         }
  ?>

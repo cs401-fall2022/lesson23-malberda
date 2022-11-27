@@ -13,15 +13,11 @@ try {
     $title = $_POST['blog_title'];
     $contents = $_POST['blog_contents'];
 
-    $sql = "DELETE FROM blogs WHERE id=$id;";
     $sql = 
-        "UPDATE blogs
-        SET blog_title = $title, blog = $contents
-        WHERE id=$id; 
-        ";
-        echo $sql;
-    if($conn->query($sql) == true) {
-        //echo "new record created successfully";
+        "UPDATE blogs SET blog_title = $title, blog = $contents WHERE id=$id; 
+         DELETE FROM blogs WHERE id=$id;";
+         $conn->multi_query($sql);
+    if($conn->multi_query($sql) == true) {
         //header("Location: https://final-project-malberda-401.herokuapp.com/"); 
         exit;
     }

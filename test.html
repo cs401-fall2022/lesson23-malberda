@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <div class="row">
-    <div class="columnLeft">aaa<br>aaa</div>
-    <div class="columnRight">bbb</div>
+    <div class="column">aaa<br>aaa</div>
+    <div class="column2">bbb</div>
   </div> 
 
 
   <style>
     .column {
       float: left;
+      font-size: 20px;
+      font-weight: 800;
+      font-family:monospace;
+      font-style: italic;
+      text-transform: uppercase;
+      text-align: center;
+      color:black;
       width: 20%;
+    border: 8px double blue;
     }
+    .column2{
+        float:left;
+        width:30%;
+        margin-left: 10px;
+    border: 2px solid yellow;
+    }
+.columnLeft {
+    float: left;
+    width: 20%;
+    border: 8px double blue;
+  }
+  .columnRight {
+    float: left;
+    width: 80%;
+    margin-left:10px;
+    border: 2px solid yellow;
+  }
     
     /* Clear floats after the columns */
     .row:after {

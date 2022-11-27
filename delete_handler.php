@@ -13,7 +13,7 @@ try {
 
     $sql = "DELETE FROM blogs WHERE id=$id;";
     if($conn->query($sql) == true) {
-        //echo "new record created successfully";
+        //echo "new record deleted successfully";
         header("Location: https://final-project-malberda-401.herokuapp.com/"); 
         exit;
     }
