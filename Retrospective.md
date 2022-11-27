@@ -1,7 +1,7 @@
 # Retrospective
 
-- name: Jane Doe
-- email: janedoe@u.boisestate.edu
+- name: Michael Alberda
+- email: michaelalberda@u.boisestate.edu
 
 ## Instructions
 
@@ -21,12 +21,12 @@ Be safe CITE!
 
 ## Experience
 
-TODO
+I struggled with getting a database setup, but ended up using heroku as the basis, which worked out. some queries dont work with heroku very well, and im not sure why. for example the update query shouldn't make a new value in the database, but it does so i have to delete the old one.
 
 ## Known issues or Bugs
 
-TODO
+editing a blog post causes a doubled up blog post unless deleted, even though when i manually run the same query in mysql workbench it doesn't double up the blog posts.
 
 ## Sources used
 
-TODO
+w3schools and stackoverflow for some simple css basics for the forms and blog page.
